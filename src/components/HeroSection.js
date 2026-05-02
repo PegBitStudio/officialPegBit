@@ -70,10 +70,10 @@ export default function HeroSection() {
           ref={addToRefs}
           style={{ 
             fontSize: '18px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)', 
-            maxWidth: '540px', marginBottom: '48px' 
+            maxWidth: '560px', marginBottom: '48px' 
           }}
         >
-          We build intelligent digital products that solve real problems, conduct research at the frontier of what is currently possible, and develop the next generation of builders.
+          PegBit Studio operates at the intersection of a frontier research lab and a high-velocity product studio. We build proprietary AI products, and we bring that exact same engineering rigor to our enterprise partners.
         </p>
 
         <div className="hero-actions reveal" ref={addToRefs} style={{ display: 'flex', alignItems: 'center', gap: '16px', flexWrap: 'wrap' }}>
@@ -83,7 +83,7 @@ export default function HeroSection() {
               <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </Link>
-          <Link href="#about" className="btn-ghost">Learn About Us</Link>
+          <Link href="#contact" className="btn-ghost">Partner With Us</Link>
         </div>
 
         <div 

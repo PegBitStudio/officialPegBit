@@ -48,19 +48,19 @@ export default function AboutSection() {
               PegBit Studio is the brand name of PegBit Technologies Ltd — a registered technology company operating as an AI-powered product studio, a frontier research lab, and a talent engine, simultaneously.
             </p>
             <p className="section-sub" style={{ fontSize: '15px' }}>
-              We are not a consultancy. We are builders. Every product we ship, every person we develop, and every line of research we pursue has one purpose: to create things that matter.
+              We don't just write code; we partner with ambitious founders and businesses to architect solutions that dominate markets. Every product we ship, every person we develop, and every line of research we pursue has one purpose: to create things that matter.
             </p>
 
             <div className="vision-block glass-panel" style={{ marginTop: '36px', background: 'rgba(79,70,229,0.06)', border: '1px solid var(--border-accent)', borderRadius: '12px', padding: '28px', marginBottom: '20px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--indigo), transparent)' }}></div>
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--indigo)', marginBottom: '12px', fontWeight: 500 }}>Vision</div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '16px', fontWeight: 500, lineHeight: 1.6, color: 'var(--white)' }}>To build technology that empowers people to do more, learn more, and create more.</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '16px', fontWeight: 500, lineHeight: 1.6, color: 'var(--white)' }}>To architect intelligent software and AI infrastructure that transforms how businesses operate and how people live.</div>
             </div>
 
             <div className="mission-block glass-panel" style={{ background: 'rgba(180,83,9,0.06)', border: '1px solid rgba(180,83,9,0.2)', borderRadius: '12px', padding: '28px', position: 'relative', overflow: 'hidden' }}>
               <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--gold), transparent)' }}></div>
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold-light)', marginBottom: '12px', fontWeight: 500 }}>Mission</div>
-              <div style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.75, color: 'rgba(255,255,255,0.8)' }}>Design intelligent products that solve real problems for the people building, learning, and shaping tomorrow.</div>
+              <div style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.75, color: 'rgba(255,255,255,0.8)' }}>To bridge the gap between emerging AI research and real-world application, shipping robust digital products for our internal portfolio and our enterprise partners.</div>
             </div>
           </div>
 
