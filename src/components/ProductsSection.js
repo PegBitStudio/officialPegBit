@@ -55,8 +55,8 @@ export default function ProductsSection() {
             <div className="product-card glass-panel reveal" ref={addToRefs} style={{ position: 'relative', overflow: 'hidden', transition: 'all 0.4s ease', display: 'flex', flexDirection: 'column' }}>
               <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid var(--indigo)' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(79,70,229,0.12)', color: 'var(--indigo)', border: '1px solid rgba(79,70,229,0.2)' }}>
-                  <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block' }}></span>
-                  Coming Soon
+                  <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
+                  Product Testing
                 </div>
                 <div style={{ width: '52px', height: '52px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px', background: 'rgba(79,70,229,0.12)' }}>⬡</div>
                 <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>Sydence</div>
@@ -66,7 +66,7 @@ export default function ProductsSection() {
                 <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-powered studio operating system that automates project management and client delivery workflows for digital and creative agencies.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer' }}>In Development →</span>
+                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer' }}>Undergoing Testing →</span>
               </div>
             </div>
 
