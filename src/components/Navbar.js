@@ -24,10 +24,15 @@ export default function Navbar() {
               PegBit Studio
             </Link>
             <ul className="nav-links">
-              <li><Link href="#about">About</Link></li>
-              <li><Link href="#services">What We Do</Link></li>
-              <li><Link href="#products">Products</Link></li>
-              <li><Link href="#contact">Contact</Link></li>
+              <li><Link href="/#about">About</Link></li>
+              <li><Link href="/#services">What We Do</Link></li>
+              <li><Link href="/#products">Products</Link></li>
+              <li>
+                <Link href="/sydence" style={{ color: 'var(--indigo)', fontWeight: 600 }}>
+                  Sydence ✦
+                </Link>
+              </li>
+              <li><Link href="/#contact">Contact</Link></li>
             </ul>
             <Link href="#contact" className="nav-cta">Get in Touch</Link>
             
@@ -51,10 +56,11 @@ export default function Navbar() {
         >
           ✕
         </button>
-        <Link href="#about" onClick={() => setMobileMenuOpen(false)}>About</Link>
-        <Link href="#services" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
-        <Link href="#products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
-        <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+        <Link href="/#about" onClick={() => setMobileMenuOpen(false)}>About</Link>
+        <Link href="/#services" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
+        <Link href="/#products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
+        <Link href="/sydence" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--indigo)' }}>Sydence ✦</Link>
+        <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
       </div>
     </>
   );
