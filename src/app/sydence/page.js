@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import WaitlistForm from '@/components/WaitlistForm';
 
 export const metadata = {
   title: 'Sydence — Run Your Studio With Clarity | PegBit Studio',
@@ -165,41 +166,37 @@ export default function SydencePage() {
           </div>
         </section>
 
-        {/* ── WAITLIST ── */}
         <div className="divider"></div>
-        <section id="waitlist" style={{ background: 'var(--navy)', padding: '100px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+        <section id="waitlist" style={{ background: 'var(--navy)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
           <div className="orb orb-indigo" style={{ width: '600px', height: '600px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.2, position: 'absolute' }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <div style={{ maxWidth: '620px', margin: '0 auto' }}>
-              <div className="section-tag" style={{ justifyContent: 'center' }}>Early Access</div>
-              <h2 className="section-heading" style={{ textAlign: 'center', marginBottom: '16px' }}>
-                Be the first to<br/><span style={{ color: 'var(--indigo)' }}>run on Sydence.</span>
-              </h2>
-              <p className="section-sub" style={{ textAlign: 'center', margin: '0 auto 40px' }}>
-                Sydence is currently in active product testing. Join the waitlist to get early access, founding-user pricing, and a direct line to the team building it.
-              </p>
-
-              <div className="glass-panel" style={{ padding: '36px', borderRadius: '16px', marginBottom: '24px', position: 'relative', overflow: 'hidden' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--indigo), #818CF8)' }}></div>
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr auto', gap: '12px', alignItems: 'center' }}>
-                  <div style={{ fontFamily: "'DM Sans', sans-serif", fontSize: '16px', fontWeight: 500, color: 'var(--white)', textAlign: 'left' }}>
-                    Ready to get started?
-                    <div style={{ fontSize: '13px', fontWeight: 300, color: 'var(--text-dim)', marginTop: '4px' }}>Send us an email with your studio name and role.</div>
-                  </div>
-                  <a
-                    href="mailto:info@pegbitstudio.com?subject=Sydence Waitlist — Early Access Request&body=Hi PegBit team,%0A%0AI'd like to join the Sydence waitlist for early access.%0A%0AStudio/Company name: %0ARole: %0ATeam size: %0AWhat do you currently use to manage projects? %0A%0ALooking forward to hearing from you."
-                    className="btn-primary"
-                    style={{ whiteSpace: 'nowrap' }}
-                  >
-                    Join Waitlist →
-                  </a>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
+              <div>
+                <div className="section-tag">Early Access</div>
+                <h2 className="section-heading" style={{ marginBottom: '16px' }}>
+                  Be the first to<br/><span style={{ color: 'var(--indigo)' }}>run on Sydence.</span>
+                </h2>
+                <p className="section-sub" style={{ marginBottom: '32px' }}>
+                  Sydence is currently in active product testing. Join the waitlist to get early access, founding-user pricing, and a direct line to the team building it.
+                </p>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  {[
+                    '🎟️ Priority early access when we launch',
+                    '💰 Founding-user pricing locked in',
+                    '🛠️ Direct feedback line to the PegBit team',
+                    '🚀 Onboarding support included',
+                  ].map((perk, i) => (
+                    <div key={i} style={{ fontSize: '14px', color: 'var(--text-dim)', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                      <span>{perk}</span>
+                    </div>
+                  ))}
                 </div>
               </div>
-
-              <p style={{ fontSize: '12px', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em', color: 'var(--text-muted)' }}>
-                No spam. No commitment. Founding access when we launch publicly.
-              </p>
+              <WaitlistForm />
             </div>
+            <p style={{ fontSize: '12px', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em', color: 'var(--text-muted)', textAlign: 'center', marginTop: '32px' }}>
+              No spam. No commitment. Founding access when we launch publicly.
+            </p>
           </div>
         </section>
 
