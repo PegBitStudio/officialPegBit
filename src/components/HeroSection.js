@@ -49,7 +49,7 @@ export default function HeroSection() {
           }}
         >
           <span style={{ width: '6px', height: '6px', background: 'var(--gold-light)', borderRadius: '50%', animation: 'pulse 2s ease infinite' }}></span>
-          AI-Powered Technology Studio · Lagos, Nigeria
+          AI-Powered Technology Studio
         </div>
 
         <h1 
@@ -107,8 +107,8 @@ export default function HeroSection() {
             <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>Year Founded</div>
           </div>
           <div className="stat-item">
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>CAC Reg.</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>PegBit Technologies Ltd</div>
+            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>Africa</div>
+            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>& Beyond</div>
           </div>
         </div>
       </div>

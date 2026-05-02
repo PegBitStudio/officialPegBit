@@ -78,7 +78,7 @@ export default function ContactSection() {
               PegBit Studio
             </div>
             <div className="footer-legal" style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-              <strong style={{ color: 'var(--text-dim)', fontWeight: 500 }}>PegBit Technologies Ltd</strong> · Registered with CAC, Nigeria.<br/>
+              <strong style={{ color: 'var(--text-dim)', fontWeight: 500 }}>PegBit Technologies Ltd</strong><br/>
               PegBit Studio is a brand of PegBit Technologies Ltd. All rights reserved © 2026.
             </div>
             <div className="footer-socials" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

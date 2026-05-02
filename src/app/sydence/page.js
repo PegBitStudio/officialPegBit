@@ -63,7 +63,10 @@ export default function SydencePage() {
                 Join the Waitlist
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
               </a>
-              <a href="https://sydence.vercel.app" target="_blank" rel="noopener noreferrer" className="btn-ghost">See Live App ↗</a>
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 18px', borderRadius: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border)', fontSize: '13px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>
+                <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#FBBF24', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
+                App Under Active Testing
+              </div>
             </div>
           </div>
         </section>
