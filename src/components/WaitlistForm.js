@@ -6,7 +6,7 @@ import { useState } from 'react';
 // 2. Create a new form called "Sydence Waitlist"
 // 3. Set the notification email to info@pegbitstudio.com
 // 4. Copy your form ID (e.g. "xyzabcde") and replace FORMSPREE_ID below
-const FORMSPREE_ID = 'YOUR_FORM_ID';
+const FORMSPREE_ID = 'xdabaker';
 // ──────────────────────────────────────────────────────────────────────────
 
 export default function WaitlistForm() {
