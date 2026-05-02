@@ -261,6 +261,14 @@ section {
   max-width: 600px;
 }
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+  margin-top: 64px;
+}
+
 /* ── DIVIDER ─────────────────────────────────────────────── */
 .divider {
   width: 100%;
@@ -347,6 +355,10 @@ section {
 @media (max-width: 900px) {
   .nav-links, .nav-cta { display: none; }
   .menu-toggle { display: flex; }
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
 }
 @media (max-width: 640px) {
   .container { padding: 0 20px; }

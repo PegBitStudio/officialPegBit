@@ -37,7 +37,7 @@ export default function AboutSection() {
 
         <div className="section-tag reveal" ref={addToRefs}>About PegBit Studio</div>
 
-        <div className="about-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '80px', alignItems: 'start', marginTop: '64px' }}>
+        <div className="about-grid">
           <div className="about-left reveal" ref={addToRefs}>
             <h2 className="section-heading">
               An AI studio built to<br/>
