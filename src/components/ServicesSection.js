@@ -14,65 +14,96 @@ export default function ServicesSection() {
           }
         });
       },
-      { threshold: 0.12 }
+      { threshold: 0.1 }
     );
-
-    revealRefs.current.forEach((el) => {
-      if (el) observer.observe(el);
-    });
-
+    revealRefs.current.forEach((el) => { if (el) observer.observe(el); });
     return () => observer.disconnect();
   }, []);
 
   const addToRefs = (el) => {
-    if (el && !revealRefs.current.includes(el)) {
-      revealRefs.current.push(el);
-    }
+    if (el && !revealRefs.current.includes(el)) revealRefs.current.push(el);
   };
 
   return (
     <>
       <div className="divider"></div>
-      <section id="services" style={{ background: 'var(--navy)' }}>
-        <div className="orb orb-teal" style={{ width: '500px', height: '500px', top: 0, right: '-150px', opacity: 0.5 }}></div>
+      <section id="services" style={{ background: 'var(--navy)', position: 'relative', overflow: 'hidden' }}>
+        <div className="orb orb-teal" style={{ width: '500px', height: '500px', top: 0, right: '-150px', opacity: 0.3 }}></div>
+
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 
-          <div className="services-intro" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'end', marginBottom: '64px' }}>
-            <div className="reveal" ref={addToRefs}>
+          {/* ── HEADER ── */}
+          <div className="services-header reveal" ref={addToRefs}>
+            <div>
               <div className="section-tag">What We Do</div>
-              <h2 className="section-heading">Three functions.<br/>One identity.</h2>
+              <h2 className="section-heading">
+                Three capabilities.<br/>
+                <span style={{ color: 'var(--indigo)' }}>One studio.</span>
+              </h2>
             </div>
-            <div className="reveal" ref={addToRefs} style={{ transitionDelay: '0.1s' }}>
-              <p className="section-sub">
-                PegBit Studio operates simultaneously as a product studio that ships, an R&D lab that researches and prototypes, and a talent engine that develops builders. These are not separate departments. They are three expressions of one identity.
-              </p>
-            </div>
+            <p className="section-sub services-desc">
+              PegBit Studio is structured around three interlocking capabilities — not separate departments. Together, they give us an unfair advantage: proprietary research that feeds our products, and real-world client work that sharpens our engineering.
+            </p>
           </div>
 
+          {/* ── CARDS ── */}
           <div className="services-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-            
-            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ position: 'relative', padding: '36px 28px', overflow: 'hidden', transition: 'all 0.4s ease' }}>
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--indigo), #818CF8)', opacity: 0.8 }}></div>
-              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--text-muted)', letterSpacing: '0.1em', marginBottom: '20px' }}>01 / 03</div>
-              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px', marginBottom: '20px', background: 'var(--indigo-glow)' }}>📦</div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>Product Studio</div>
-              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>We build, ship, and maintain intelligent digital products that reach real users and generate revenue. Own products and client commissions — multiple revenue streams that reinforce each other.</p>
+
+            {/* Product Studio */}
+            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ padding: '40px 32px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--indigo), transparent)' }}></div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '0.15em', marginBottom: '24px' }}>01</div>
+              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px', marginBottom: '20px', background: 'var(--indigo-glow)' }}>📦</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '8px' }}>Product Studio</div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--indigo)', letterSpacing: '0.08em', marginBottom: '16px' }}>Build & Ship</div>
+              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.75, color: 'var(--text-dim)', marginBottom: '24px' }}>
+                We design, engineer, and ship AI-native software products — both for our own portfolio and for enterprise clients who need a technical partner that operates at startup velocity.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {['AI product development', 'Client software commissions', 'Rapid prototyping'].map((t, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: 'var(--text-muted)' }}>
+                    <span style={{ width: '4px', height: '4px', background: 'var(--indigo)', borderRadius: '50%', flexShrink: 0 }}></span>{t}
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.1s', position: 'relative', padding: '36px 28px', overflow: 'hidden', transition: 'all 0.4s ease' }}>
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--gold), var(--gold-light))', opacity: 0.8 }}></div>
-              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--text-muted)', letterSpacing: '0.1em', marginBottom: '20px' }}>02 / 03</div>
-              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px', marginBottom: '20px', background: 'rgba(180,83,9,0.12)' }}>🔬</div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>R&D Lab</div>
-              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>We research emerging technology, experiment with AI, and prototype what does not yet exist. We stay ahead by exploring what others are not yet building — generating IP that feeds the product pipeline.</p>
+            {/* R&D Lab */}
+            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.1s', padding: '40px 32px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--gold), transparent)' }}></div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '0.15em', marginBottom: '24px' }}>02</div>
+              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px', marginBottom: '20px', background: 'rgba(180,83,9,0.12)' }}>🔬</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '8px' }}>R&D Lab</div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--gold-light)', letterSpacing: '0.08em', marginBottom: '16px' }}>Research & Frontier</div>
+              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.75, color: 'var(--text-dim)', marginBottom: '24px' }}>
+                We research, prototype, and stress-test ideas at the frontier of AI — generating proprietary intellectual property that feeds directly into our product pipeline and informs how we solve client problems.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {['Applied AI research', 'Proprietary IP development', 'Emerging technology exploration'].map((t, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: 'var(--text-muted)' }}>
+                    <span style={{ width: '4px', height: '4px', background: 'var(--gold)', borderRadius: '50%', flexShrink: 0 }}></span>{t}
+                  </div>
+                ))}
+              </div>
             </div>
 
-            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.2s', position: 'relative', padding: '36px 28px', overflow: 'hidden', transition: 'all 0.4s ease' }}>
-              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--teal), #2DD4BF)', opacity: 0.8 }}></div>
-              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--text-muted)', letterSpacing: '0.1em', marginBottom: '20px' }}>03 / 03</div>
-              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '22px', marginBottom: '20px', background: 'var(--teal-dim)' }}>🧱</div>
-              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '12px' }}>Talent Engine</div>
-              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>We develop builders through real ownership, structured growth, and the discipline of shipping. The people developed inside PegBit are as valuable as any product we launch.</p>
+            {/* Studio Fellowship */}
+            <div className="service-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.2s', padding: '40px 32px', position: 'relative', overflow: 'hidden' }}>
+              <div style={{ position: 'absolute', bottom: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--teal), transparent)' }}></div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', color: 'var(--text-muted)', letterSpacing: '0.15em', marginBottom: '24px' }}>03</div>
+              <div style={{ width: '48px', height: '48px', borderRadius: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '20px', marginBottom: '20px', background: 'var(--teal-dim)' }}>🧱</div>
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '8px' }}>Studio Fellowship</div>
+              <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--teal)', letterSpacing: '0.08em', marginBottom: '16px' }}>People & Development</div>
+              <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.75, color: 'var(--text-dim)', marginBottom: '24px' }}>
+                We don't hire for roles — we develop builders. Every person inside PegBit holds real ownership, ships real products, and grows in a structured environment designed to produce senior engineers and product leaders.
+              </p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                {['Builder development programme', 'Real-world product ownership', 'Senior engineering pipeline'].map((t, i) => (
+                  <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '12px', color: 'var(--text-muted)' }}>
+                    <span style={{ width: '4px', height: '4px', background: 'var(--teal)', borderRadius: '50%', flexShrink: 0 }}></span>{t}
+                  </div>
+                ))}
+              </div>
             </div>
 
           </div>
