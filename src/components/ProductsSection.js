@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef } from 'react';
+import Link from 'next/link';
 
 export default function ProductsSection() {
   const revealRefs = useRef([]);
@@ -66,7 +67,7 @@ export default function ProductsSection() {
                 <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-powered studio operating system that automates project management and client delivery workflows for digital and creative agencies.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer' }}>Undergoing Testing →</span>
+                <Link href="/sydence" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Learn More & Join Waitlist →</Link>
               </div>
             </div>
 
