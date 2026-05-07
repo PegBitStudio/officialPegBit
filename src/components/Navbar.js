@@ -32,6 +32,11 @@ export default function Navbar() {
                   Sydence ✦
                 </Link>
               </li>
+              <li>
+                <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold-light)', fontWeight: 600 }}>
+                  Omos ✦
+                </Link>
+              </li>
               <li><Link href="/#contact">Contact</Link></li>
             </ul>
             <Link href="#contact" className="nav-cta">Get in Touch</Link>
@@ -60,6 +65,7 @@ export default function Navbar() {
         <Link href="/#services" onClick={() => setMobileMenuOpen(false)}>What We Do</Link>
         <Link href="/#products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
         <Link href="/sydence" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--indigo)' }}>Sydence ✦</Link>
+        <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--gold-light)' }}>Omos ✦</Link>
         <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
       </div>
     </>

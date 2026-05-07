@@ -90,22 +90,22 @@ export default function ProductsSection() {
               </div>
             </div>
 
-            {/* OmosAI */}
+            {/* Omos */}
             <div className="product-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.2s', position: 'relative', overflow: 'hidden', transition: 'all 0.4s ease', display: 'flex', flexDirection: 'column' }}>
               <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid var(--gold)' }}>
-                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(79,70,229,0.12)', color: 'var(--indigo)', border: '1px solid rgba(79,70,229,0.2)' }}>
-                  <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block' }}></span>
-                  Coming Soon
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(180,83,9,0.12)', color: 'var(--gold)', border: '1px solid rgba(180,83,9,0.2)' }}>
+                  <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
+                  Waitlist Open
                 </div>
                 <div style={{ width: '52px', height: '52px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px', background: 'rgba(180,83,9,0.12)' }}>🤖</div>
-                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>OmosAI</div>
+                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>Omos</div>
                 <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>Proprietary AI Infrastructure</div>
               </div>
               <div style={{ padding: '20px 28px 28px', flexGrow: 1 }}>
                 <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>PegBit's proprietary AI infrastructure layer — currently powering Sydence and ExamSurf, designed to eventually serve as a standalone enterprise AI service.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
-                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--gold-light)', transition: 'gap 0.2s', cursor: 'pointer' }}>In Development →</span>
+                <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--gold-light)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Join Waitlist →</Link>
               </div>
             </div>
 

@@ -3,7 +3,7 @@ import './globals.css'
 export const metadata = {
   title: 'PegBit Studio — Foundation meets Frontier.',
   description: 'PegBit Studio is an AI-powered technology studio building intelligent products that empower people to do more, learn more, and create more. Lagos, Nigeria.',
-  keywords: 'PegBit, PegBit Studio, AI studio Nigeria, AI product studio, Lagos technology studio, Sydence, ExamSurf, OmosAI, AI-powered products',
+  keywords: 'PegBit, PegBit Studio, AI studio Nigeria, AI product studio, Lagos technology studio, Sydence, ExamSurf, Omos, AI-powered products',
   authors: [{ name: 'PegBit Technologies Ltd' }],
   alternates: {
     canonical: 'https://pegbitstudio.com/',
