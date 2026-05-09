@@ -52,7 +52,7 @@ export default function StudentWaitlist() {
             onChange={(e) => setEmail(e.target.value)}
             style={{
               padding: '14px 18px',
-              background: 'rgba(255,255,255,0.03)',
+              background: 'var(--navy-light)',
               border: '1px solid var(--border)',
               borderRadius: '12px',
               color: 'var(--white)',

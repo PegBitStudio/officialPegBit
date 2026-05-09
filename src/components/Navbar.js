@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import ThemeToggle from './ThemeToggle';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -44,7 +45,10 @@ export default function Navbar() {
               </li>
               <li><Link href="/#contact">Contact</Link></li>
             </ul>
-            <Link href="#contact" className="nav-cta">Get in Touch</Link>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+              <ThemeToggle />
+              <Link href="#contact" className="nav-cta">Get in Touch</Link>
+            </div>
             
             <button 
               className="menu-toggle" 
@@ -73,6 +77,9 @@ export default function Navbar() {
         <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--gold-light)' }}>Omos ✦</Link>
         <Link href="/examsurf" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--teal)' }}>ExamSurf ✦</Link>
         <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+        <div style={{ marginTop: '20px' }}>
+          <ThemeToggle />
+        </div>
       </div>
     </>
   );

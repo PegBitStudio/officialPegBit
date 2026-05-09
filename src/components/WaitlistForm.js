@@ -190,7 +190,7 @@ const labelStyle = {
 
 const inputStyle = {
   width: '100%',
-  background: 'rgba(255,255,255,0.04)',
+  background: 'var(--navy-light)',
   border: '1px solid var(--border)',
   borderRadius: '8px',
   padding: '11px 14px',
