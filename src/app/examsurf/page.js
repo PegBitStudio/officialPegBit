@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import WaitlistForm from '@/components/WaitlistForm';
 
 export const metadata = {
   title: 'ExamSurf — The Smartest Way to Pass JAMB & WAEC | PegBit Studio',
@@ -155,32 +154,18 @@ export default function ExamSurfPage() {
           </div>
         </section>
 
-        {/* ── WAITLIST ── */}
+        {/* ── FINAL CTA ── */}
         <div className="divider"></div>
-        <section id="waitlist" style={{ background: 'var(--navy)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
+        <section style={{ background: 'var(--navy)', padding: '120px 0', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+          <div className="orb orb-teal" style={{ width: '500px', height: '500px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.15 }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '60px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
-              <div>
-                <div className="section-tag">Get Early Access</div>
-                <h2 className="section-heading" style={{ marginBottom: '16px' }}>
-                  Join the<br/><span style={{ color: 'var(--teal)' }}>ExamSurf League.</span>
-                </h2>
-                <p className="section-sub" style={{ marginBottom: '32px' }}>
-                  We are currently onboarding students for the 2025 exam cycle. Join the waitlist to lock in your early-access discount and get immediate priority.
-                </p>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>💰</div>
-                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>70% Discount</strong> for early users</div>
-                  </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🚀</div>
-                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>Priority Onboarding</strong> for JAMB 2025</div>
-                  </div>
-                </div>
-              </div>
-              <WaitlistForm />
-            </div>
+            <h2 className="section-heading" style={{ marginBottom: '24px' }}>Ready to experience<br/><span style={{ color: 'var(--teal)' }}>the future of prep?</span></h2>
+            <p className="section-sub" style={{ maxWidth: '600px', margin: '0 auto 40px' }}>
+              The platform is currently in active testing. Access the live demo today and see why thousands of students are switching to ExamSurf.
+            </p>
+            <Link href="https://examsurf.com/demo" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ background: 'var(--teal)', boxShadow: '0 4px 20px rgba(13,148,136,0.3)' }}>
+              Launch Live Demo →
+            </Link>
           </div>
         </section>
 
