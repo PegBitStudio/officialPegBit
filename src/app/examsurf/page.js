@@ -67,7 +67,7 @@ export default function ExamSurfPage() {
               </Link>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 18px', borderRadius: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border)', fontSize: '13px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>
                 <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: 'var(--teal)', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
-                Ready for JAMB 2025
+                App Under Active Testing
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function ExamSurfPage() {
                   Join the<br/><span style={{ color: 'var(--teal)' }}>Student Waitlist.</span>
                 </h2>
                 <p className="section-sub" style={{ marginBottom: '32px' }}>
-                  We are currently onboarding students for the upcoming exam cycle. Join the list to get notified as soon as a spot opens up in our private testing group.
+                  ExamSurf is currently undergoing private testing. Join the waitlist to be notified when we open the next round of beta access to new users.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -175,7 +175,7 @@ export default function ExamSurfPage() {
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🚀</div>
-                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>Early Onboarding</strong> for JAMB 2025</div>
+                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>Beta Testing</strong> notifications</div>
                   </div>
                 </div>
               </div>
