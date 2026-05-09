@@ -86,7 +86,7 @@ export default function ProductsSection() {
                 <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-driven exam preparation platform for JAMB and WAEC, generating personalised practice questions powered by ten years of exam data.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
-                <Link href="https://examsurf.com/demo" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--teal)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>View Demo →</Link>
+                <Link href="/examsurf" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--teal)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Learn More & View Demo →</Link>
               </div>
             </div>
 

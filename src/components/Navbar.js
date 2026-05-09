@@ -38,7 +38,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li>
-                <Link href="https://examsurf.com/demo" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--teal)', fontWeight: 600 }}>
+                <Link href="/examsurf" style={{ color: 'var(--teal)', fontWeight: 600 }}>
                   ExamSurf ✦
                 </Link>
               </li>
@@ -71,7 +71,7 @@ export default function Navbar() {
         <Link href="/#products" onClick={() => setMobileMenuOpen(false)}>Products</Link>
         <Link href="/sydence" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--indigo)' }}>Sydence ✦</Link>
         <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--gold-light)' }}>Omos ✦</Link>
-        <Link href="https://examsurf.com/demo" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--teal)' }}>ExamSurf ✦</Link>
+        <Link href="/examsurf" onClick={() => setMobileMenuOpen(false)} style={{ color: 'var(--teal)' }}>ExamSurf ✦</Link>
         <Link href="/#contact" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
       </div>
     </>
