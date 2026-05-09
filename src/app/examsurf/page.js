@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import WaitlistForm from '@/components/WaitlistForm';
+import StudentWaitlist from '@/components/StudentWaitlist';
 
 export const metadata = {
   title: 'ExamSurf — The Smartest Way to Pass JAMB & WAEC | PegBit Studio',
@@ -161,25 +161,25 @@ export default function ExamSurfPage() {
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '60px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
               <div>
-                <div className="section-tag">Get Early Access</div>
+                <div className="section-tag">Early Access</div>
                 <h2 className="section-heading" style={{ marginBottom: '16px' }}>
-                  Join the<br/><span style={{ color: 'var(--teal)' }}>ExamSurf League.</span>
+                  Join the<br/><span style={{ color: 'var(--teal)' }}>Student Waitlist.</span>
                 </h2>
                 <p className="section-sub" style={{ marginBottom: '32px' }}>
-                  We are currently onboarding students for the 2025 exam cycle. Join the waitlist to lock in your early-access discount and get immediate priority.
+                  We are currently onboarding students for the upcoming exam cycle. Join the list to get notified as soon as a spot opens up in our private testing group.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>💰</div>
-                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>70% Discount</strong> for early users</div>
+                    <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🤖</div>
+                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}>Priority access to <strong>Omos AI Tutor</strong></div>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
                     <div style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--teal-dim)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px' }}>🚀</div>
-                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>Priority Onboarding</strong> for JAMB 2025</div>
+                    <div style={{ fontSize: '14px', color: 'var(--text-dim)' }}><strong>Early Onboarding</strong> for JAMB 2025</div>
                   </div>
                 </div>
               </div>
-              <WaitlistForm />
+              <StudentWaitlist />
             </div>
           </div>
         </section>
