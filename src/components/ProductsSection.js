@@ -83,7 +83,7 @@ export default function ProductsSection() {
                 <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>AI Exam Preparation</div>
               </div>
               <div style={{ padding: '20px 28px 28px', flexGrow: 1 }}>
-                <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-driven exam preparation platform for JAMB and WAEC, generating personalised practice questions powered by ten years of exam data.</p>
+                <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-driven platform for JAMB and WAEC that intelligently generates thousands of unique practice questions based on 10 years of past exam patterns and syllabus data.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
                 <Link href="/examsurf" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--teal)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Learn More & View Demo →</Link>
