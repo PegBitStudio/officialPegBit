@@ -19,11 +19,13 @@ export default function Navbar() {
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <div className="container">
-          <div className="nav-inner">
-            <Link href="#hero" className="nav-logo">
-              <span className="hex">⬡</span>
-              PegBit Studio
-            </Link>
+            <div className="nav-left">
+              <Link href="#hero" className="nav-logo">
+                <span className="hex">⬡</span>
+                PegBit Studio
+              </Link>
+            </div>
+
             <ul className="nav-links">
               <li><Link href="/#about">About</Link></li>
               <li><Link href="/#services">What We Do</Link></li>
@@ -45,7 +47,8 @@ export default function Navbar() {
               </li>
               <li><Link href="/#contact">Contact</Link></li>
             </ul>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+
+            <div className="nav-right">
               <ThemeToggle />
               <Link href="#contact" className="nav-cta">Get in Touch</Link>
               <button 
