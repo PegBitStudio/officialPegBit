@@ -91,7 +91,7 @@ export default function HeroSection() {
           ref={addToRefs}
           style={{ 
             display: 'flex', marginTop: '72px', paddingTop: '48px', 
-            borderTop: '1px solid var(--border)', flexWrap: 'wrap', gap: 0 
+            borderTop: '1px solid var(--border)', flexWrap: 'wrap', rowGap: '32px', columnGap: '0' 
           }}
         >
           {[
