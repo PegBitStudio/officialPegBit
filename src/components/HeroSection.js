@@ -90,26 +90,21 @@ export default function HeroSection() {
           className="hero-stats reveal" 
           ref={addToRefs}
           style={{ 
-            display: 'flex', gap: '40px', marginTop: '72px', paddingTop: '40px', 
-            borderTop: '1px solid var(--border)', flexWrap: 'wrap' 
+            display: 'flex', marginTop: '72px', paddingTop: '48px', 
+            borderTop: '1px solid var(--border)', flexWrap: 'wrap', gap: 0 
           }}
         >
-          <div className="stat-item">
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>3</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>Products in Pipeline</div>
-          </div>
-          <div className="stat-item">
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>AI-First</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>By Design</div>
-          </div>
-          <div className="stat-item">
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>2026</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>Year Founded</div>
-          </div>
-          <div className="stat-item">
-            <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>Africa</div>
-            <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>& Beyond</div>
-          </div>
+          {[
+            { value: '3', label: 'AI Products in Pipeline' },
+            { value: 'AI-First', label: 'By Design' },
+            { value: '2026', label: 'Year Founded' },
+            { value: 'Africa', label: '& Beyond' },
+          ].map((s, i) => (
+            <div key={i} className="about-stat-item">
+              <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '28px', fontWeight: 700, color: 'var(--white)', letterSpacing: '-0.03em' }}>{s.value}</div>
+              <div style={{ fontSize: '12px', color: 'var(--text-dim)', letterSpacing: '0.05em', textTransform: 'uppercase', marginTop: '2px' }}>{s.label}</div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
