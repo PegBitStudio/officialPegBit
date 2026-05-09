@@ -47,7 +47,7 @@ export default function ContactSection() {
               Whether you're a potential client, partner, investor, or grant committee — we'd love to hear from you. Every important thing starts with a conversation.
             </p>
 
-            <div className="contact-cards reveal" ref={addToRefs} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', marginBottom: '48px' }}>
+            <div className="contact-cards reveal" ref={addToRefs} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '16px', marginBottom: '48px' }}>
               <a href="mailto:info@pegbitstudio.com" className="contact-card glass-panel" style={{ padding: '24px', textAlign: 'left', transition: 'all 0.3s', cursor: 'pointer', display: 'block' }}>
                 <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '8px' }}>General Enquiries</div>
                 <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '15px', fontWeight: 600, color: 'var(--indigo)', wordBreak: 'break-all' }}>info@pegbitstudio.com</div>
@@ -72,7 +72,7 @@ export default function ContactSection() {
 
       <footer style={{ background: 'var(--navy-mid)', borderTop: '1px solid var(--border)', padding: '40px 0' }}>
         <div className="container">
-          <div className="footer-inner" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
+          <div className="footer-inner responsive-footer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
             <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: '16px' }}>
               <span className="hex" style={{ color: 'var(--indigo)', fontSize: '20px' }}>⬡</span>
               PegBit Studio

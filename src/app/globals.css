@@ -95,6 +95,13 @@ img { max-width: 100%; display: block; }
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
+  width: 100%;
+}
+
+.responsive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 20px;
 }
 
 /* ── NAVIGATION ─────────────────────────────────────────── */
@@ -515,6 +522,7 @@ section {
   .hex-bg { opacity: 0.025; }
   .mobile-nav a { font-size: 24px; }
   .values-grid { grid-template-columns: 1fr; }
+  .responsive-footer { justify-content: center !important; text-align: center; }
 }
 @media (max-width: 380px) {
   .container { padding: 0 16px; }

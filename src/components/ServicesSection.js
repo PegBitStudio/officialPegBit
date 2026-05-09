@@ -47,7 +47,7 @@ export default function ServicesSection() {
           </div>
 
           {/* ── CARDS ── */}
-          <div className="services-cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+          <div className="services-cards responsive-grid">
 
             {/* Product Studio */}
             <div className="service-card glass-panel reveal" ref={addToRefs} style={{ padding: '40px 32px', position: 'relative', overflow: 'hidden' }}>

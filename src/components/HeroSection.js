@@ -56,7 +56,7 @@ export default function HeroSection() {
           className="hero-headline reveal" 
           ref={addToRefs}
           style={{ 
-            fontFamily: "'Syne', sans-serif", fontSize: 'clamp(48px, 7vw, 88px)', 
+            fontFamily: "'Syne', sans-serif", fontSize: 'clamp(36px, 7vw, 88px)', 
             fontWeight: 800, lineHeight: 1.0, letterSpacing: '-0.04em', marginBottom: '32px' 
           }}
         >

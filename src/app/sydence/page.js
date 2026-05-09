@@ -50,7 +50,7 @@ export default function SydencePage() {
               Currently in Product Testing · by PegBit Studio
             </div>
 
-            <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: 'clamp(46px, 7vw, 84px)', fontWeight: 800, lineHeight: 1.0, letterSpacing: '-0.04em', marginBottom: '28px' }}>
+            <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: 'clamp(36px, 7vw, 84px)', fontWeight: 800, lineHeight: 1.0, letterSpacing: '-0.04em', marginBottom: '28px' }}>
               <span style={{ display: 'block' }}>Run your studio</span>
               <span style={{ color: 'var(--indigo)', display: 'block' }}>with clarity.</span>
             </h1>
@@ -92,7 +92,7 @@ export default function SydencePage() {
               </h2>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginBottom: '80px' }}>
+            <div className="responsive-grid" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', marginBottom: '80px' }}>
               {[
                 { icon: '🗂️', color: 'var(--indigo)', bg: 'rgba(79,70,229,0.1)', title: 'Project Board', desc: 'Kanban and pipeline views for every project. Track status, owners, and deadlines in one glance — no spreadsheets required.' },
                 { icon: '🤖', color: 'var(--teal)', bg: 'var(--teal-dim)', title: 'Omos AI', desc: 'Ask questions, log standups, create projects — all by chat. Omos reads your live studio data and acts on your commands.' },
@@ -120,7 +120,7 @@ export default function SydencePage() {
               <h2 className="section-heading" style={{ textAlign: 'center' }}>Up and running<br/><span style={{ color: 'var(--indigo)' }}>in minutes.</span></h2>
               <p className="section-sub" style={{ textAlign: 'center', margin: '0 auto' }}>No lengthy setup. No training required.</p>
             </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '20px', maxWidth: '900px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))', gap: '20px', maxWidth: '900px', margin: '0 auto' }}>
               {[
                 { step: '01', title: 'Create your studio', desc: 'Sign up and name your workspace. Your Studio OS is live in under two minutes.' },
                 { step: '02', title: 'Invite your team', desc: 'Share a link — that\'s it. No email servers, no config, no external tools needed.' },
@@ -140,7 +140,7 @@ export default function SydencePage() {
         <div className="divider"></div>
         <section style={{ background: 'var(--navy-light)', padding: '80px 0' }}>
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'center', maxWidth: '960px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '60px', alignItems: 'center', maxWidth: '960px', margin: '0 auto' }}>
               <div>
                 <div className="section-tag">AI at the Core</div>
                 <h2 className="section-heading">Meet Omos —<br/><span style={{ color: 'var(--teal)' }}>your studio AI.</span></h2>
@@ -170,7 +170,7 @@ export default function SydencePage() {
         <section id="waitlist" style={{ background: 'var(--navy)', padding: '100px 0', position: 'relative', overflow: 'hidden' }}>
           <div className="orb orb-indigo" style={{ width: '600px', height: '600px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.2, position: 'absolute' }}></div>
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '60px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '60px', alignItems: 'start', maxWidth: '960px', margin: '0 auto' }}>
               <div>
                 <div className="section-tag">Early Access</div>
                 <h2 className="section-heading" style={{ marginBottom: '16px' }}>

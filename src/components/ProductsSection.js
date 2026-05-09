@@ -38,7 +38,7 @@ export default function ProductsSection() {
         <div className="orb orb-gold" style={{ width: '600px', height: '600px', bottom: '-100px', left: '-200px', opacity: 0.5 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 
-          <div className="products-intro" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '40px', alignItems: 'end', marginBottom: '64px' }}>
+          <div className="products-intro" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '40px', alignItems: 'end', marginBottom: '64px' }}>
             <div className="reveal" ref={addToRefs}>
               <div className="section-tag">Our Products</div>
               <h2 className="section-heading">Intelligent products<br/>built for real problems.</h2>
@@ -50,7 +50,7 @@ export default function ProductsSection() {
             </div>
           </div>
 
-          <div className="products-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
+          <div className="products-grid responsive-grid">
 
             {/* Sydence */}
             <div className="product-card glass-panel reveal" ref={addToRefs} style={{ position: 'relative', overflow: 'hidden', transition: 'all 0.4s ease', display: 'flex', flexDirection: 'column' }}>

@@ -68,7 +68,7 @@ export default function WaitlistForm() {
       <div className="glass-panel" style={{ padding: '40px', borderRadius: '16px', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--indigo), #818CF8)' }}></div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', gap: '14px', marginBottom: '14px' }}>
           <div>
             <label style={labelStyle}>Full Name *</label>
             <input
@@ -99,7 +99,7 @@ export default function WaitlistForm() {
           </div>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '14px', marginBottom: '14px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))', gap: '14px', marginBottom: '14px' }}>
           <div>
             <label style={labelStyle}>Studio / Company Name *</label>
             <input
