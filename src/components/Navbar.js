@@ -19,6 +19,7 @@ export default function Navbar() {
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <div className="container">
+          <div className="nav-inner">
             <div className="nav-left">
               <Link href="#hero" className="nav-logo">
                 <span className="hex">⬡</span>
