@@ -83,7 +83,7 @@ export default function SydencePage() {
         </section>
 
         {/* ── FEATURES ── */}
-        <section id="features" style={{ background: 'var(--navy-light)', paddingTop: '0' }}>
+        <section id="features" style={{ background: 'var(--navy-light)', paddingTop: '0', position: 'relative', overflow: 'hidden' }}>
           <div className="container">
             <div style={{ textAlign: 'center', maxWidth: '640px', margin: '0 auto 64px' }}>
               <div className="section-tag" style={{ justifyContent: 'center' }}>Everything Your Studio Needs</div>
@@ -113,7 +113,7 @@ export default function SydencePage() {
 
         {/* ── UP AND RUNNING ── */}
         <div className="divider"></div>
-        <section style={{ background: 'var(--navy)', padding: '80px 0' }}>
+        <section style={{ background: 'var(--navy)', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
           <div className="container">
             <div style={{ textAlign: 'center', maxWidth: '560px', margin: '0 auto 56px' }}>
               <div className="section-tag" style={{ justifyContent: 'center' }}>Simple Setup</div>
@@ -138,7 +138,7 @@ export default function SydencePage() {
 
         {/* ── OMOS SPOTLIGHT ── */}
         <div className="divider"></div>
-        <section style={{ background: 'var(--navy-light)', padding: '80px 0' }}>
+        <section style={{ background: 'var(--navy-light)', padding: '80px 0', position: 'relative', overflow: 'hidden' }}>
           <div className="container">
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 300px), 1fr))', gap: '60px', alignItems: 'center', maxWidth: '960px', margin: '0 auto' }}>
               <div>

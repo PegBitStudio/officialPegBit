@@ -34,7 +34,7 @@ export default function ProductsSection() {
   return (
     <>
       <div className="divider"></div>
-      <section id="products" style={{ background: 'var(--navy-light)' }}>
+      <section id="products" style={{ background: 'var(--navy-light)', position: 'relative', overflow: 'hidden' }}>
         <div className="orb orb-gold" style={{ width: '600px', height: '600px', bottom: '-100px', left: '-200px', opacity: 0.5 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
 

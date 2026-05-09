@@ -33,7 +33,7 @@ export default function ContactSection() {
   return (
     <>
       <div className="divider"></div>
-      <section id="contact" style={{ background: 'var(--navy)', textAlign: 'center' }}>
+      <section id="contact" style={{ background: 'var(--navy)', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <div className="orb orb-indigo" style={{ width: '600px', height: '600px', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', opacity: 0.25 }}></div>
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
           <div className="contact-inner" style={{ maxWidth: '700px', margin: '0 auto' }}>
