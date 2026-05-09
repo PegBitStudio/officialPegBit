@@ -45,18 +45,17 @@ export default function Navbar() {
               </li>
               <li><Link href="/#contact">Contact</Link></li>
             </ul>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <ThemeToggle />
               <Link href="#contact" className="nav-cta">Get in Touch</Link>
+              <button 
+                className="menu-toggle" 
+                aria-label="Open menu"
+                onClick={() => setMobileMenuOpen(true)}
+              >
+                <span></span><span></span><span></span>
+              </button>
             </div>
-            
-            <button 
-              className="menu-toggle" 
-              aria-label="Open menu"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <span></span><span></span><span></span>
-            </button>
           </div>
         </div>
       </nav>
