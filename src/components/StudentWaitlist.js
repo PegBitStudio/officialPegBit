@@ -12,7 +12,7 @@ export default function StudentWaitlist() {
     // We use Formspree or similar here. 
     // For now, we simulate success or the user can provide their endpoint.
     try {
-      const response = await fetch('https://formspree.io/f/xvgzloww', { // Placeholder or User's endpoint
+      const response = await fetch('https://formspree.io/f/mvzlvoow', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, project: 'ExamSurf' })
