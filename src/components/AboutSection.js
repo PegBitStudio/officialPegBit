@@ -54,7 +54,7 @@ export default function AboutSection() {
         {/* ── IDENTITY STATS ── */}
         <div className="about-stats reveal" ref={addToRefs}>
           {[
-            { value: '3', label: 'AI Products in Pipeline' },
+            { value: '4', label: 'AI Products in Pipeline' },
             { value: '2026', label: 'Founded' },
             { value: 'Africa', label: 'Primary Market' },
             { value: '10yr', label: 'Thinking Horizon' },

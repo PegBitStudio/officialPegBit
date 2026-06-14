@@ -4,7 +4,7 @@ import WaitlistForm from '@/components/WaitlistForm';
 export const metadata = {
   title: 'Sydence — Run Your Studio With Clarity | PegBit Studio',
   description:
-    'Projects. Team. Ideas. Intelligence. Sydence is a Studio Operating System built for creative studios that move fast and think clearly. Currently in product testing.',
+    'Projects. Team. Ideas. Intelligence. Sydence is a Studio Operating System built for creative studios that move fast and think clearly. Beta now open.',
   openGraph: {
     title: 'Sydence — Studio Operating System',
     description:
@@ -29,7 +29,7 @@ export default function SydencePage() {
               <Link href="/#products" style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: 'var(--text-dim)', textDecoration: 'none', letterSpacing: '0.05em' }}>
                 ← Back
               </Link>
-              <a href="https://sydence.vercel.app/signup" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '8px 18px', fontSize: '13px' }}>
+              <a href="https://sydence.com/signup" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ padding: '8px 18px', fontSize: '13px' }}>
                 Get Started Free →
               </a>
             </div>
@@ -47,7 +47,7 @@ export default function SydencePage() {
           <div className="container" style={{ position: 'relative', zIndex: 1 }}>
             <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', fontWeight: 500, color: 'var(--indigo)', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: '28px', padding: '6px 14px', border: '1px solid rgba(79,70,229,0.3)', borderRadius: '20px', background: 'rgba(79,70,229,0.08)' }}>
               <span style={{ width: '6px', height: '6px', background: 'var(--indigo)', borderRadius: '50%', animation: 'pulse 2s ease infinite', display: 'inline-block' }}></span>
-              Currently in Product Testing · by PegBit Studio
+              Beta Now Open · by PegBit Studio
             </div>
 
             <h1 style={{ fontFamily: "'Syne', sans-serif", fontSize: 'clamp(36px, 7vw, 84px)', fontWeight: 800, lineHeight: 1.0, letterSpacing: '-0.04em', marginBottom: '28px' }}>
@@ -66,7 +66,7 @@ export default function SydencePage() {
               </a>
               <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '10px 18px', borderRadius: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid var(--border)', fontSize: '13px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>
                 <span style={{ width: '7px', height: '7px', borderRadius: '50%', background: '#FBBF24', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
-                App Under Active Testing
+                Beta Testers Wanted
               </div>
             </div>
           </div>

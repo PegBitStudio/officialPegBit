@@ -57,7 +57,7 @@ export default function ProductsSection() {
               <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid var(--indigo)' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(79,70,229,0.12)', color: 'var(--indigo)', border: '1px solid rgba(79,70,229,0.2)' }}>
                   <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
-                  Product Testing
+                  Beta Open
                 </div>
                 <div style={{ width: '52px', height: '52px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px', background: 'rgba(79,70,229,0.12)' }}>⬡</div>
                 <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>Sydence</div>
@@ -67,7 +67,7 @@ export default function ProductsSection() {
                 <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>An AI-powered studio operating system that automates project management and client delivery workflows for digital and creative agencies.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
-                <Link href="/sydence" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Learn More & Join Waitlist →</Link>
+                <a href="https://sydence.com" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--indigo)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Try the Beta →</a>
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export default function ProductsSection() {
               <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid var(--teal)' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(13,148,136,0.12)', color: 'var(--teal)', border: '1px solid rgba(13,148,136,0.2)' }}>
                   <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
-                  Demo Available
+                  In Development
                 </div>
                 <div style={{ width: '52px', height: '52px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px', background: 'rgba(13,148,136,0.12)' }}>📚</div>
                 <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>ExamSurf</div>
@@ -90,8 +90,27 @@ export default function ProductsSection() {
               </div>
             </div>
 
-            {/* Omos */}
+            {/* AI Kraft */}
             <div className="product-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.2s', position: 'relative', overflow: 'hidden', transition: 'all 0.4s ease', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid #E11D48' }}>
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(225,29,72,0.12)', color: '#F43F5E', border: '1px solid rgba(225,29,72,0.2)' }}>
+                  <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>
+                  Beta Open
+                </div>
+                <div style={{ width: '52px', height: '52px', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '24px', marginBottom: '16px', background: 'rgba(225,29,72,0.12)' }}>✦</div>
+                <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '4px' }}>AI Kraft</div>
+                <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>Culturally-Adapted Content AI</div>
+              </div>
+              <div style={{ padding: '20px 28px 28px', flexGrow: 1 }}>
+                <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>One brief, eleven platform-native formats. AI Kraft generates marketing content tuned to local voices, slang, and culture across 10 African markets plus global English.</p>
+              </div>
+              <div style={{ padding: '0 28px 24px' }}>
+                <a href="https://aikraft.pegbitstudio.com" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: '#F43F5E', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Try the Beta →</a>
+              </div>
+            </div>
+
+            {/* Omos */}
+            <div className="product-card glass-panel reveal" ref={addToRefs} style={{ transitionDelay: '0.3s', position: 'relative', overflow: 'hidden', transition: 'all 0.4s ease', display: 'flex', flexDirection: 'column' }}>
               <div style={{ padding: '28px 28px 20px', borderBottom: '1px solid var(--border)', borderTop: '3px solid var(--gold)' }}>
                 <div style={{ display: 'inline-flex', alignItems: 'center', gap: '5px', fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', fontWeight: 500, padding: '4px 10px', borderRadius: '20px', marginBottom: '16px', background: 'rgba(180,83,9,0.12)', color: 'var(--gold)', border: '1px solid rgba(180,83,9,0.2)' }}>
                   <span style={{ width: '5px', height: '5px', background: 'currentColor', borderRadius: '50%', display: 'inline-block', animation: 'pulse 2s infinite' }}></span>

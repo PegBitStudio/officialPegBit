@@ -95,7 +95,7 @@ export default function HeroSection() {
           }}
         >
           {[
-            { value: '3', label: 'AI Products in Pipeline' },
+            { value: '4', label: 'AI Products in Pipeline' },
             { value: 'AI-First', label: 'By Design' },
             { value: '2026', label: 'Year Founded' },
             { value: 'Africa', label: '& Beyond' },
