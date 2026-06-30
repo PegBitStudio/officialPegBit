@@ -121,7 +121,7 @@ export default function ProductsSection() {
                 <div style={{ fontSize: '12px', color: 'var(--text-muted)', fontFamily: "'JetBrains Mono', monospace", letterSpacing: '0.05em' }}>Proprietary AI Infrastructure</div>
               </div>
               <div style={{ padding: '20px 28px 28px', flexGrow: 1 }}>
-                <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>PegBit's proprietary AI infrastructure layer — currently powering Sydence and ExamSurf, designed to eventually serve as a standalone enterprise AI service.</p>
+                <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.7, color: 'var(--text-dim)' }}>PegBit&apos;s proprietary AI infrastructure layer — currently powering Sydence and ExamSurf, designed to eventually serve as a standalone enterprise AI service.</p>
               </div>
               <div style={{ padding: '0 28px 24px' }}>
                 <Link href="https://omosai.dev" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontSize: '13px', fontWeight: 500, color: 'var(--gold-light)', transition: 'gap 0.2s', cursor: 'pointer', textDecoration: 'none' }}>Join Waitlist →</Link>

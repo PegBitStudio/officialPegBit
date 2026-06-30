@@ -40,11 +40,11 @@ export default function ContactSection() {
 
             <div className="section-tag reveal" ref={addToRefs} style={{ justifyContent: 'center' }}>Get In Touch</div>
             <h2 className="section-heading reveal" ref={addToRefs} style={{ textAlign: 'center', marginBottom: '16px' }}>
-              Let's build something<br/>
+              Let&apos;s build something<br/>
               <span style={{ color: 'var(--indigo)' }}>that matters.</span>
             </h2>
             <p className="section-sub reveal" ref={addToRefs} style={{ margin: '0 auto 48px', textAlign: 'center' }}>
-              Whether you're a potential client, partner, investor, or grant committee — we'd love to hear from you. Every important thing starts with a conversation.
+              Whether you&apos;re a potential client, partner, investor, or grant committee — we&apos;d love to hear from you. Every important thing starts with a conversation.
             </p>
 
             <div className="contact-cards reveal" ref={addToRefs} style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))', gap: '16px', marginBottom: '48px' }}>
@@ -60,6 +60,24 @@ export default function ContactSection() {
               </a>
             </div>
 
+            {/* Registered Entity Card */}
+            <div className="reveal" ref={addToRefs} style={{ marginBottom: '48px' }}>
+              <div className="glass-panel" style={{ padding: '24px', textAlign: 'left', borderTop: '1px solid rgba(79,70,229,0.3)', position: 'relative', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '2px', background: 'linear-gradient(90deg, var(--indigo), transparent)' }}></div>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: '16px' }}>
+                  <div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '10px' }}>Registered Legal Entity</div>
+                    <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '17px', fontWeight: 700, color: 'var(--white)', marginBottom: '4px' }}>PegBit Technologies Ltd</div>
+                    <div style={{ fontSize: '13px', color: 'var(--text-dim)' }}>Trading as <strong style={{ color: 'var(--indigo)', fontWeight: 500 }}>PegBit Studio</strong> &nbsp;·&nbsp; Lagos, Nigeria</div>
+                  </div>
+                  <div style={{ textAlign: 'right' }}>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '6px' }}>CAC Registration</div>
+                    <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '15px', fontWeight: 500, color: 'var(--indigo)', letterSpacing: '0.05em' }}>RC 9513533</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="contact-tagline reveal" ref={addToRefs} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', fontFamily: "'Syne', sans-serif", fontSize: '14px', color: 'var(--text-muted)', letterSpacing: '0.05em' }}>
               <div style={{ flex: 1, maxWidth: '80px', height: '1px', background: 'var(--border)' }}></div>
               Foundation meets Frontier.
@@ -73,13 +91,15 @@ export default function ContactSection() {
       <footer style={{ background: 'var(--navy-mid)', borderTop: '1px solid var(--border)', padding: '40px 0' }}>
         <div className="container">
           <div className="footer-inner responsive-footer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '20px' }}>
-            <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px', fontFamily: "'Syne', sans-serif", fontWeight: 600, fontSize: '16px' }}>
+            <div className="footer-logo" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
               <span className="hex" style={{ color: 'var(--indigo)', fontSize: '20px' }}>⬡</span>
-              PegBit Studio
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
+                <span style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, fontSize: '16px', color: 'var(--white)', letterSpacing: '-0.02em' }}>PegBit Technologies Ltd</span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '9px', letterSpacing: '0.12em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>Trading as PegBit Studio &nbsp;·&nbsp; RC 9513533</span>
+              </div>
             </div>
-            <div className="footer-legal" style={{ fontSize: '13px', color: 'var(--text-muted)', lineHeight: 1.6 }}>
-              <strong style={{ color: 'var(--text-dim)', fontWeight: 500 }}>PegBit Technologies Ltd</strong><br/>
-              PegBit Studio is a brand of PegBit Technologies Ltd. All rights reserved © 2026.
+            <div className="footer-legal" style={{ fontSize: '12px', color: 'var(--text-muted)', lineHeight: 1.6, textAlign: 'center' }}>
+              &copy; 2026 PegBit Technologies Ltd. All rights reserved.
             </div>
             <div className="footer-socials" style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <a href="https://linkedin.com/company/pegbitstudio" target="_blank" rel="noopener noreferrer" title="LinkedIn" style={{ width: '36px', height: '36px', borderRadius: '8px', background: 'var(--glass-bg)', border: '1px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-dim)', transition: 'all 0.2s', textDecoration: 'none' }}>

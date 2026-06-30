@@ -23,7 +23,18 @@ export default function Navbar() {
             <div className="nav-left">
               <Link href="#hero" className="nav-logo">
                 <span className="hex">⬡</span>
-                PegBit Studio
+                <span style={{ display: 'flex', flexDirection: 'column', gap: '1px' }}>
+                  <span>PegBit Studio</span>
+                  <span style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: '8px',
+                    fontWeight: 400,
+                    letterSpacing: '0.14em',
+                    color: 'var(--text-muted)',
+                    textTransform: 'uppercase',
+                    lineHeight: 1
+                  }}>PegBit Technologies Ltd</span>
+                </span>
               </Link>
             </div>
 

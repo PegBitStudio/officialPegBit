@@ -95,7 +95,7 @@ export default function ServicesSection() {
               <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, letterSpacing: '-0.02em', marginBottom: '8px' }}>Studio Fellowship</div>
               <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', color: 'var(--teal)', letterSpacing: '0.08em', marginBottom: '16px' }}>People & Development</div>
               <p style={{ fontSize: '14px', fontWeight: 300, lineHeight: 1.75, color: 'var(--text-dim)', marginBottom: '24px' }}>
-                We don't hire for roles — we develop builders. Every person inside PegBit holds real ownership, ships real products, and grows in a structured environment designed to produce senior engineers and product leaders.
+                We don&apos;t hire for roles — we develop builders. Every person inside PegBit holds real ownership, ships real products, and grows in a structured environment designed to produce senior engineers and product leaders.
               </p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {['Builder development programme', 'Real-world product ownership', 'Senior engineering pipeline'].map((t, i) => (

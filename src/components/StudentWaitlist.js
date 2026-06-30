@@ -31,8 +31,8 @@ export default function StudentWaitlist() {
     return (
       <div className="glass-panel" style={{ padding: '40px', textAlign: 'center', borderRadius: '24px', border: '1px solid var(--teal)' }}>
         <div style={{ fontSize: '32px', marginBottom: '16px' }}>🎉</div>
-        <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, marginBottom: '10px' }}>You're in!</h3>
-        <p style={{ fontSize: '14px', color: 'var(--text-dim)' }}>We'll email you as soon as a spot opens up in the testing group.</p>
+        <h3 style={{ fontFamily: "'Syne', sans-serif", fontSize: '20px', fontWeight: 700, marginBottom: '10px' }}>You&apos;re in!</h3>
+        <p style={{ fontSize: '14px', color: 'var(--text-dim)' }}>We&apos;ll email you as soon as a spot opens up in the testing group.</p>
       </div>
     );
   }

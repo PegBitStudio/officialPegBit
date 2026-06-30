@@ -1,6 +1,7 @@
 import './globals.css'
 
 export const metadata = {
+  metadataBase: new URL('https://pegbitstudio.com'),
   title: 'PegBit Studio — Foundation meets Frontier.',
   description: 'PegBit Studio is an AI-powered technology studio building intelligent products that empower people to do more, learn more, and create more. Lagos, Nigeria.',
   keywords: 'PegBit, PegBit Studio, AI studio Nigeria, AI product studio, Lagos technology studio, Sydence, ExamSurf, Omos, AI-powered products',
@@ -44,12 +45,18 @@ export default function RootLayout({ children }) {
     "@type": "Organization",
     "name": "PegBit Studio",
     "legalName": "PegBit Technologies Ltd",
+    "alternateName": ["PegBit", "PegBit Technologies"],
     "url": "https://pegbitstudio.com",
     "logo": "https://pegbitstudio.com/apple-touch-icon.png",
     "image": "https://pegbitstudio.com/og-image.png",
-    "description": "An AI-powered technology studio building intelligent products that empower people to do more, learn more, and create more.",
+    "description": "PegBit Technologies Ltd (trading as PegBit Studio) is an AI-powered technology studio building intelligent products that empower people to do more, learn more, and create more. Lagos, Nigeria. CAC Reg. No. RC 9513533.",
     "slogan": "Foundation meets Frontier.",
     "foundingDate": "2026",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "CAC Registration Number",
+      "value": "RC 9513533"
+    },
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Lagos",

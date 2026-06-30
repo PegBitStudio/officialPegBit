@@ -44,12 +44,27 @@ export default function HeroSection() {
             display: 'inline-flex', alignItems: 'center', gap: '8px', 
             fontFamily: "'JetBrains Mono', monospace", fontSize: '11px', fontWeight: 500, 
             color: 'var(--gold-light)', letterSpacing: '0.12em', textTransform: 'uppercase', 
-            marginBottom: '28px', padding: '6px 14px', border: '1px solid rgba(180,83,9,0.3)', 
+            marginBottom: '12px', padding: '6px 14px', border: '1px solid rgba(180,83,9,0.3)', 
             borderRadius: '20px', background: 'var(--gold-dim)' 
           }}
         >
           <span style={{ width: '6px', height: '6px', background: 'var(--gold-light)', borderRadius: '50%', animation: 'pulse 2s ease infinite' }}></span>
           AI-Powered Technology Studio
+        </div>
+
+        <div
+          className="hero-label reveal"
+          ref={addToRefs}
+          style={{
+            display: 'inline-flex', alignItems: 'center', gap: '8px',
+            fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', fontWeight: 400,
+            color: 'var(--text-muted)', letterSpacing: '0.12em', textTransform: 'uppercase',
+            marginBottom: '28px', padding: '5px 12px', border: '1px solid var(--border)',
+            borderRadius: '20px', background: 'rgba(255,255,255,0.02)'
+          }}
+        >
+          <span style={{ width: '5px', height: '5px', background: 'var(--text-muted)', borderRadius: '50%' }}></span>
+          PegBit Technologies Ltd &nbsp;·&nbsp; RC 9513533
         </div>
 
         <h1 

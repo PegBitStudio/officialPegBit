@@ -55,9 +55,9 @@ export default function WaitlistForm() {
       <div className="glass-panel" style={{ padding: '48px 40px', borderRadius: '16px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
         <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: '3px', background: 'linear-gradient(90deg, var(--teal), #34D399)' }}></div>
         <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'rgba(13,148,136,0.15)', border: '1px solid rgba(13,148,136,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '28px', margin: '0 auto 20px' }}>✓</div>
-        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, marginBottom: '10px' }}>You're on the list.</div>
+        <div style={{ fontFamily: "'Syne', sans-serif", fontSize: '22px', fontWeight: 700, marginBottom: '10px' }}>You&apos;re on the list.</div>
         <p style={{ fontSize: '15px', fontWeight: 300, color: 'var(--text-dim)', lineHeight: 1.7 }}>
-          We'll be in touch with early access details. You'll be among the first studios to run on Sydence.
+          We&apos;ll be in touch with early access details. You&apos;ll be among the first studios to run on Sydence.
         </p>
       </div>
     );

@@ -132,7 +132,7 @@ export default function ExamSurfPage() {
                 <div className="section-tag">Proprietary Intelligence</div>
                 <h2 className="section-heading">Omos — Your<br/><span style={{ color: 'var(--teal)' }}>Personal AI Coach.</span></h2>
                 <p className="section-sub" style={{ marginBottom: '24px' }}>
-                  Don\'t just practice questions. Get guided. Omos analyzes every answer you give and builds a custom curriculum for your success.
+                  Don&apos;t just practice questions. Get guided. Omos analyzes every answer you give and builds a custom curriculum for your success.
                 </p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                   {['Personalised study plans', 'Instant subject explanations', 'Weekly progress digests', 'Mock exam predictions'].map((t, i) => (
@@ -145,10 +145,10 @@ export default function ExamSurfPage() {
               <div className="glass-panel" style={{ padding: '40px', borderRadius: '24px', background: 'rgba(13,148,136,0.05)', border: '1px solid rgba(13,148,136,0.2)' }}>
                 <div style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '12px', color: 'var(--teal)', marginBottom: '20px', letterSpacing: '0.1em' }}>OMOS TUTOR MODE_</div>
                 <div style={{ background: 'rgba(0,0,0,0.3)', padding: '20px', borderRadius: '12px', border: '1px solid var(--border)', marginBottom: '16px' }}>
-                  <p style={{ fontSize: '13px', color: 'var(--text-dim)', fontStyle: 'italic' }}>"Omos, I don\'t understand how to calculate the equilibrium constant in this Chemistry question..."</p>
+                  <p style={{ fontSize: '13px', color: 'var(--text-dim)', fontStyle: 'italic' }}>&ldquo;Omos, I don&apos;t understand how to calculate the equilibrium constant in this Chemistry question...&rdquo;</p>
                 </div>
                 <div style={{ background: 'var(--teal-dim)', padding: '20px', borderRadius: '12px', border: '1px solid rgba(13,148,136,0.3)' }}>
-                  <p style={{ fontSize: '13px', color: 'var(--white)', lineHeight: 1.6 }}>"Think of it like a balance scale. When a reaction is at equilibrium, the rate of the forward reaction equals the rate of the reverse reaction..."</p>
+                  <p style={{ fontSize: '13px', color: 'var(--white)', lineHeight: 1.6 }}>&ldquo;Think of it like a balance scale. When a reaction is at equilibrium, the rate of the forward reaction equals the rate of the reverse reaction...&rdquo;</p>
                 </div>
               </div>
             </div>

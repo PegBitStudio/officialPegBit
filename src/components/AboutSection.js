@@ -33,7 +33,7 @@ export default function AboutSection() {
 
         {/* ── MANIFESTO ROW ── */}
         <div className="about-manifesto reveal" ref={addToRefs}>
-          <div className="section-tag">About PegBit Studio</div>
+          <div className="section-tag">About PegBit Technologies Ltd</div>
           <div className="manifesto-layout">
             <h2 className="manifesto-heading">
               We build AI products<br/>
@@ -42,11 +42,16 @@ export default function AboutSection() {
             </h2>
             <div className="manifesto-right">
               <p style={{ fontSize: '17px', fontWeight: 300, lineHeight: 1.8, color: 'var(--text-dim)', marginBottom: '24px' }}>
-                PegBit Studio is an AI-powered product studio — simultaneously building proprietary software, conducting frontier research, and developing the engineers who will define the next wave of African technology.
+                PegBit Technologies Ltd (trading as <strong style={{ color: 'var(--white)', fontWeight: 500 }}>PegBit Studio</strong>) is an AI-powered product studio — simultaneously building proprietary software, conducting frontier research, and developing the engineers who will define the next wave of African technology.
               </p>
               <p style={{ fontSize: '15px', fontWeight: 300, lineHeight: 1.8, color: 'var(--text-muted)' }}>
                 We partner with ambitious businesses to architect solutions that last. Every product we ship and every partnership we take on is designed with one standard: does it matter in ten years?
               </p>
+              <div style={{ marginTop: '28px', display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 14px', borderRadius: '8px', background: 'rgba(255,255,255,0.03)', border: '1px solid var(--border)' }}>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.14em', color: 'var(--text-muted)', textTransform: 'uppercase' }}>Registered Entity</span>
+                <span style={{ width: '1px', height: '12px', background: 'var(--border)' }}></span>
+                <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: '10px', letterSpacing: '0.1em', color: 'var(--text-dim)', textTransform: 'uppercase' }}>PegBit Technologies Ltd &nbsp;·&nbsp; RC 9513533</span>
+              </div>
             </div>
           </div>
         </div>
